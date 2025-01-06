@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#ba78bd] to-[#613177]">
       <CardContainer className="inet-var">
-        <CardBody className="group/card m-auto w-[500px] flex flex-col gap-5 rounded-xl bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#ba78bd] to-[#613177] p-6 hover:shadow-lg">
+        <CardBody className="group/card m-auto w-[500px] flex flex-col items-center gap-5 rounded-xl bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#ba78bd] to-[#613177] p-6 hover:shadow-lg">
           <CardItem translateZ={200} className="mt-4 w-full">
             <img src={product.product.src} alt={product.product.title} />
           </CardItem>
@@ -23,7 +23,7 @@ function App() {
 
           <CardItem
             translateZ={100}
-            className="mt-2 max-w-sm text-xl font-semibold text-[#ffbd78]"
+            className="mt-2 max-w-sm text-xl font-semibold text-[#ffbd78] text-center"
             component="p"
           >
             {product.product.description}
